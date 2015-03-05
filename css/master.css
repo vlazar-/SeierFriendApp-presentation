@@ -1,0 +1,26 @@
+.semi-light{
+    font-weight: 300 !important;
+}
+.fr-orange{
+    color: #e25a10 !important;
+}
+.fr-orange-strong{
+    color: #e25a10 !important;
+    font-weight: 300 !important;
+}
+.img-pure{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+hr.seier{
+    background-color: #e25a10;
+    border-color: #e25a10;
+    color:#e25a10;
+}
+ul {
+    list-style: none !important;
+}
+.no-margin{
+    margin: 0 !important;
+}
