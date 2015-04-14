@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.1/animate.min.css" />
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,900,700italic,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,900,700italic,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/reveal.css">
   <link rel="stylesheet" href="css/theme/serif.css" id="theme">
   <link rel="stylesheet" href="css/master.css">
@@ -83,9 +83,10 @@
 
       <section>
         <p>
-          <span class="fr-orange-strong">SeierFriendApp</span> mobilna aplikacija namijenjena je posjetiteljima trgovačkog centra Shopping city Seiersberg u Grazu. Posjetitelji mogu postati "Prijatelji Seisberga" i prilikom svakog posjeta skupljati bodove vjernosti.
+          <span class="fr-orange-strong">SeierFriendApp</span> mobilna aplikacija je namijenjena posjetiteljima Shopping Cityja Seiersberg u Grazu.
+Posjetitelji mogu postati „Prijatelji Seiersberga“ i skupljati bodove prilikom svakog posjeta.
           <br>
-          <br>Tri skupine prijatelja:
+          <br>Postoje 3 razine "prijatelja":
         </p>
         <ul class="fr-orange-strong">
           <li>Basic Friend</li>
@@ -95,34 +96,97 @@
       </section>
 
       <section>
-				<p>Evolaris je postavio četiri terminala u sklopu trgovačkog centra gdje "Prijatelji Seisberga" mogu pogledati svoje stanje bodova i dostupne popuste koristeći svoju NFC karticu.</p>
-        <p>Glavni cilj projekta bio je istražiti mogućnost zamjene sustava NFC kartica s
+        <p>Trenutno su u shopping cityju postavljena 4 terminala na kojima „Prijatelji Seiersberga“ mogu pregledati svoj status bodova i kupona korištenjem svojih NFC kartica.</p>
+        <p>Glavni cilj našeg projekta bio je istražiti mogućnost zamjene dosadašnjih NFC kartica
           <span class="fr-orange-strong">Bluetooth Low Energy</span> tehnologijom.</p>
-        <p>Umjesto NFC kartica, posjetitelji bi imali
-          <span class="fr-orange-strong">cjelokupnu funkcionalnost terminala na pametnim telefonima.</span>
+        <p>Umjesto korištenja NFC kartica korisnici će imati
+          <span class="fr-orange-strong">svu funkcionalnost terminala na svojim uređajima.</span>
         </p>
       </section>
 
       <section>
         <h3>
-          Zašto
-          <span class="fr-orange">Bluetooth Low Energy </span>?
+          Zašto Bluetooth Low Energy?
         </h3>
+        <ul class="fr-orange-strong">
+          <li class="fragment">Nova tehnologija (2010.)</li>
+          <li class="fragment">Manja potrošnja baterije u usporedbi s Bluetoothom</li>
+          <li class="fragment">Dostupna i na manjim uređajima (satovi, igre…)</li>
+          <li class="fragment">Internet of Things</li>
+          <li class="fragment">Komunikaciju između uređaja moguće ostvariti unutar većeg dosega (nekoliko metara)</li>
+          <li class="fragment">Manji troškovi implementacije</li>
+          <li class="fragment">Interoperabilnost</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Beacon uređaji</h3>
+        <ul class="fr-orange-strong">
+          <li>Šalju beacon signale</li>
+          <li>Svaki beacon sadrži MAC adresu uređaja</li>
+        </ul>
+
+        <img src="img/beacon.jpg" class="img-pure no-margin" width="550px" alt="" />
+      </section>
+
+      <section>
+        <h3>Korisnička priča SeierFriendApp aplikacije</h3>
+        <ol class="fr-orange-strong">
+          <li class="fragment">Korisnik se registrira online i dobiva status „Prijatelj Seiersberga“</li>
+          <li class="fragment">Korisnik dođe u shopping city…</li>
+          <li class="fragment">Aplikacija prepoznaje Bluetooth LE beacon uređaj i prikazuje notifikaciju na korisnikovom uređaju…</li>
+          <li class="fragment">Korisnik otvara notifikaciju checkin (dobiva bodove) ili obična prijava</li>
+          <li class="fragment">Korisnik pregledava status bodova i kupona, svoje informacije itd.</li>
+          <li class="fragment">Korisnik se odjavljuje</li>
+        </ol>
       </section>
 
 			<section>
-				<img src="img/beacon.jpg" class="img-pure no-margin" width="550px" alt="" />
+				<h1 class="fr-orange">Funkcionalnosti SeierFriendApp aplikacije</h1>
 			</section>
 
-      <section>
-        <h3>Use case:</h3>
-        <ul class="fr-orange-strong">
-          <li class="fragment">Korisnik ulazi u trgovački centar.</li>
-          <li class="fragment">Aplikacija prepoznaje Bluetooth beacon.</li>
-          <li class="fragment">Korisnik dobiva obavijest i prijavljuje se.</li>
-          <li class="fragment">(dodatno) Korisnik pregledava dostupne popuste.</li>
-        </ul>
-      </section>
+			<section>
+				<h4 class="fr-orange">
+					Checkin korisnika i dobivanje bodova
+				</h4>
+				<img src="img/Picture2.png" class="img-pure no-margin" width="350" alt="" />
+			</section>
+
+			<section>
+				<img src="img/Picture3.png" class="img-pure no-margin" width="350" alt="" />
+			</section>
+
+			<section>
+				<h4 class="fr-orange">
+					Prijava korisnika
+				</h4>
+				<img src="img/Picture4.png" class="img-pure no-margin" width="350" alt="" />
+			</section>
+
+			<section>
+				<h4 class="fr-orange">
+					Pregled bodovnog stanja
+				</h4>
+				<img src="img/Picture5.png" class="img-pure no-margin" width="350" alt="" />
+			</section>
+
+			<section>
+				<img src="img/Picture1.png" class="img-pure no-margin" width="350" alt="" />
+			</section>
+
+			<section>
+				<h4 class="fr-orange">
+					Pregled korinsikokvih informacija
+				</h4>
+				<img src="img/Picture6.png" class="img-pure no-margin" width="350" alt="" />
+			</section>
+
+			<section>
+				<h4 class="fr-orange">
+					Pregled dostupnih kupona
+				</h4>
+				<img src="img/Picture7.png" class="img-pure no-margin" width="350" alt="" />
+			</section>
 
       <section>
         <p class="no-margin">Arhitektura sustava</p>
@@ -140,7 +204,7 @@
         <h2 class="fr-orange">Pitanja?</h2>
       </section>
 
-			<section>
+      <section>
         <h2 class="fr-orange">Hvala na pažnji.</h2>
       </section>
 
